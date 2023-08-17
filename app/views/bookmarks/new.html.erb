@@ -1,0 +1,6 @@
+<%= simple_form_for ([@list, @bookmark]) do |f| %>
+  <%= f.input :comment %>
+  <%= f.association :movie%>
+  <%= f.button :submit %>
+<% end %>
+<%= link_to "return to list", list_path(@list), class: 'text-decoration-none' %>

@@ -1,0 +1,12 @@
+<%= render "navbar" %>
+<div class="banner_index">
+  <h1 class="text-white">All your lists</h1>
+</div>
+<ul class="mt-5 ms-3">
+  <% @lists.each do |list| %>
+    <%= link_to list_path(list), class: "text-decoration-none" do %>
+    <li class="text-dark"><%= list.name %></li>
+    <% end %>
+  <% end %>
+</ul>
+<%= link_to "Create a movie list", new_list_path, class: "ms-3 text-decoration-none" %>

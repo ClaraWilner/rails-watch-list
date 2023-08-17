@@ -10,3 +10,32 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.banner_index {
+  background-image: url("https://variety.com/wp-content/uploads/2022/12/100-Greatest-Movies-Variety.jpg?w=1024");
+  height: 300px;
+  filter: drop-shadow(5px 5px 4px #3e3e50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_show {
+  background-image: url("https://s3-us-west-2.amazonaws.com/prd-rteditorial/wp-content/uploads/2018/03/13153742/RT_300EssentialMovies_700X250.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.picture {
+  height: 200px;
+  width: 200px;
+  filter: drop-shadow(5px 5px 4px #3e3e50);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
